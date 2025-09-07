@@ -8,11 +8,11 @@ import Link from "next/link"
 
 export default function SignupPage() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-100 via-white to-indigo-50">
-      <Card className="w-[400px] shadow-xl rounded-2xl">
+    <div className="flex items-center justify-center min-h-screen bg-background text-foreground p-4">
+      <Card className="w-[400px] shadow-xl rounded-2xl bg-card text-card-foreground">
         <CardHeader>
-          <CardTitle className="text-2xl text-center">Create an account</CardTitle>
-          <CardDescription className="text-center">
+          <CardTitle className="text-2xl text-center font-bold">Create an account</CardTitle>
+          <CardDescription className="text-center text-muted-foreground">
             Enter your details to sign up
           </CardDescription>
         </CardHeader>
@@ -43,7 +43,7 @@ export default function SignupPage() {
           <Button className="w-full">Sign Up</Button>
           <p className="text-sm text-muted-foreground text-center">
             Already have an account?{" "}
-            <Link href="/login" className="underline hover:text-indigo-600">
+            <Link href="/login" className="text-primary hover:underline">
               Log in
             </Link>
           </p>

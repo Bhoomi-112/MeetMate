@@ -10,14 +10,14 @@ import { motion } from "framer-motion";
 
 export default function LoginPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-950 p-4">
+    <div className="flex min-h-screen items-center justify-center bg-background text-foreground p-4">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="w-full max-w-md"
       >
-        <Card className="shadow-lg rounded-2xl">
+        <Card className="shadow-lg rounded-2xl bg-card text-card-foreground">
           <CardHeader>
             <CardTitle className="text-2xl text-center font-bold">
               Welcome Back 👋
@@ -62,10 +62,10 @@ export default function LoginPage() {
             </form>
 
             <div className="mt-4 flex items-center justify-between text-sm">
-              <Link href="/forgot-password" className="text-blue-600 hover:underline">
+              <Link href="/forgot-password" className="text-primary hover:underline">
                 Forgot Password?
               </Link>
-              <Link href="/signup" className="text-blue-600 hover:underline">
+              <Link href="/signup" className="text-primary hover:underline">
                 Create Account
               </Link>
             </div>
